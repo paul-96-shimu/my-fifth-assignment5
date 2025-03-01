@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 px-36 py-6">
+    <section class="container mx-auto">
+        <nav class="bg-white  py-4 px-6 flex  justify-between items-center rounded-md shadow-md">
+            <div class="flex justify-center  items-center gap-2">
+                <img class="w-[26px] h-[26px]" src="./assets/Vector.svg" alt="">
+                <h1> <span class="text-[#00303C]text-xs text-4xl">Dev</spa><span class="font-black">Board</span> </h1>
+            </div>
+            <div class="flex items-center gap-9">
+
+                <button id="back-btn" class=" p-3 rounded-full bg-blue-700 text-white "> Back to Back</button>
+            </div>
+        </nav>
+    </section>
+    <section class="container mx-auto py-7">
+        <h2 class="text-2xl font-bold text-black text-center mb-5 mt-5 ">Blogs</h2>
+        <div class="collapse  bg-base-100 border border-base-300 mb-5">
+
+            <div class="collapse-title font-semibold">
+                <h1><span class="text-2xl font-bold">Question-1:</span> <span class="text-2xl"> What are the different
+                        ways to select an
+                        element
+                        in
+                        the DOM?</span>
+                </h1>
+                <br>
+                <p class="text-black text-xl font-bold">Answer: <span class="text-xl"> Therer Different ways to select
+                        elements fro the DOM, such as
+                        <ul>
+                            <li>1.getElementById</li>
+                            <li>2.getElementsByClassName</li>
+                            <li>3.querySelector</li>
+                            <li>4.querySelectorAll</li>
+                            <li>5.getElementsByName</li>
+                            <li>6.getElementsByTagName</li>
+                        </ul>
+                    </span>
+
+                </p>
+            </div>
+
+        </div>
+        <div class="collapse  bg-base-100 border border-base-300 mb-5">
+
+            <div class="collapse-title font-semibold">
+                <h1> <span class="text-2xl font-bold">Question-2:</span> <span class="text-2xl">What is the difference
+                        between innerHTML,
+                        innerText,
+                        and textContent ? </span></h1>
+
+                <br>
+                <p class="text-black text-xl font-bold">Answer: <span class="text-xl"> Ther are some different are
+                        innerHTML, innerText, and textContent
+                        <br>
+                        <br>
+                        1. innerHTML:
+                        Reads or modifies the HTML inside an element.
+                        Parses any HTML tags inside it.
+                        javascript
+                        Copy
+                        Edit
+                        <br>
+                        <br>
+                        2. innerText:
+                        Retrieves only the visible text.
+                        Ignores hidden elements (display: none or visibility: hidden).
+                        Doesn’t parse HTML.
+                        <br>
+                        <br>
+                        3. textContent:
+                        Retrieves all text content, including hidden elements.
+                        Does not parse HTML.
+                    </span></p>
+            </div>
+
+        </div>
+        <div class="collapse  bg-base-100 border border-base-300 mb-5">
+
+            <div class="collapse-title font-semibold">
+                <h1> <span class="text-2xl font-bold">Question-3:</span> <span class="text-2xl"> What is event
+                        delegation
+                        in the
+                        DOM?</span></h1>
+
+                <br>
+                <p class="text-black text-xl font-bold">Answer: <br> <span class="xl">Event Delegation is a technique in
+                        JavaScript where instead of adding event listeners to multiple child elements, we add a single
+                        event listener to a parent element. This works because of event bubbling, where events propagate
+                        up from the target element to its ancestors.
+
+                    </span></p>
+            </div>
+
+        </div>
+        <div class="collapse  bg-base-100 border border-base-300 mb-5">
+
+            <div class="collapse-title font-semibold">
+                <h1> <span class="text-2xl font-bold">Question-4:</span> <span class="text-2xl"> What is event bubbling
+                        in the DOM?</span>
+
+                </h1>
+
+                <br>
+                <p class="text-black text-xl font-bold">Answer: <br>
+                    <span class="text-xl">Event bubbling is a mechanism in
+                        the DOM where an
+                        event starts from the target element (where the event occurs) and then propagates up through its
+                        parent elements until it reaches the root (document).
+
+                    </span>
+
+                </p>
+            </div>
+
+        </div>
+        <div class="collapse  bg-base-100 border border-base-300 mb-5">
+
+            <div class="collapse-title font-semibold">
+                <h1> <span class="text-2xl font-bold">Question-5:</span> <span class="text-2xl">How do you create, add,
+                        and remove
+                        elements
+                        using JavaScript?</span>
+
+                </h1>
+
+                <br>
+                <p class="text-black text-xl font-bold">Answer: <br> Here,s how to create, add and delete elements using
+                    javascript such as <br>
+                <ol>
+                    <li>1.Creating Elements (document.createElement)</li>
+                    <br>
+                    <li>2️. Adding Elements to the <br>
+                        appenchild()-add as last child <br>
+                        prepend() – Add as First Child
+                        <br>insertBefore() – Insert Before a Specific Element
+                    </li>
+                    <br>
+                    <li>3. Removing Elements from the DOM <br>
+                        removeChild() – Remove a Child Element <br>
+                        remove() – Directly Remove an Element </li>
+                </ol>
+                </p>
+            </div>
+
+        </div>
+
+
+
+    </section>
+    <script>
+        document.getElementById("back-btn").addEventListener("click", function () {
+            window.history.back();
+        });
+
+    </script>
+    <script src="./js/dev.js"></script>
+
+</body>
+
+</html>
