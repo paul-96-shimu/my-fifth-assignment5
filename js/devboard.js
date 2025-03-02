@@ -21,10 +21,7 @@ document.addEventListener("click", function (event) {
         completedCount++;
         numberElement.innerText = completedCount;
 
-        // const logEntry = document.createElement("p");
-        // logEntry.innerText = ` Task completed at ${new Date().toLocaleTimeString()}`;
-        // logEntry.classList.add("text-green-600", "font-semibold", "mt-2");
-        // activityLog.appendChild(logEntry);
+
 
 
         if (modalTextElement) {
