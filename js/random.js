@@ -4,4 +4,3 @@ document.getElementById('random-color').addEventListener('click', function (even
     document.body.style.backgroundColor = randomcolor;
 
 })
-
