@@ -3,7 +3,7 @@ document.addEventListener("click", function (event) {
     if (event.target && event.target.classList.contains("complete-btn")) {
         event.preventDefault();
 
-        const taskAssignedElement = document.getElementById("task-assigned");
+        const taskAssignedElement = document.querySelector("#task-assigned + p");
         const numberElement = document.getElementById("number");
         const activityLog = document.getElementById("activity-log");
         const modal = document.getElementById("success-modal");
