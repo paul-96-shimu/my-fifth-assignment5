@@ -6,7 +6,7 @@ document.getElementById('random-color').addEventListener('click', function (even
 })
 
 
-
+// clander part
 
 
 document.getElementById("calender").addEventListener("click", function (event) {
